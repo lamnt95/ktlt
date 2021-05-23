@@ -1,17 +1,22 @@
-#include <iostream>
-using namespace std;
+#include<stdio.h>
+
 #include<math.h>
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int getData(int *N){
+	printf("\n Nhap so phan tu mang: "); 
+	scanf("%d", N);
+}
 
 int main(int argc, char** argv) {
 	int N;
 	float x;
 	float y;
 	
-	cout << " Nhap so phan tu mang: ";
-	cin >> N;
-	
+	getData(&N);
+	printf(" Mang co %d phan tu ", N); 
+
 	float *X = new float[N];
 	float *Y = new float[N];
 	
